@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/x-icon" href="/images/fav2.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Scholarships</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light t">
+        <a class="navbar-brand fs-1" href="#"><img src="/images/" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/"><img src="/images/logo_new.png" alt=""></a>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          
+          
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link fs-6 " href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="scholarship.html">Scholarships</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <input type="text" placeholder="Search                            🔎">
+            </li>
+            <li class="nav-item">
+              <button>Sign up</button>
+            </li>
+            
+           
+          </ul>
+          
+        </div>
+      </nav>
+     
+    <div class="filter-container">
+        <h1>Filters to search:</h1>
+        <p>
+            Search for scholarships based on the various filters shown below.
+            Tick the relevant boxes that apply to you. Note: These filters are highly selective
+
+        </p>
+    
+    <div class="filters">
+    
+        <ul>
+            <h3>Category</h3>
+            <li>
+                <input type="checkbox" id="women" name="women" value="">
+                <label for="women">Scholarships for Women</label>
+            </li>
+            <li>
+                <input type="checkbox" id="sc" name="sc" value="">
+                <label for="sc">SC</label>
+            </li>
+            <li>
+                <input type="checkbox" id="st" name="st" value="">
+                <label for="st">ST</label>
+            </li>
+            <li>
+                <input type="checkbox" id="obc" name="obc" value="">
+                <label for="obc">OBC</label>
+            </li>
+            <li>
+                <input type="checkbox" id="general" name="general" value="">
+                <label for="general">General</label>
+            </li>
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>
+        <ul>
+            <h3>Education Level</h3>
+            <li>
+                <input type="checkbox" id="metric" name="metric" value="">
+                <label for="metric">Metric</label>
+            </li>
+            <li>
+                <input type="checkbox" id="diploma" name="diploma" value="">
+                <label for="diploma">Diploma</label>
+            </li>
+            <li>
+                <input type="checkbox" id="ungergrad" name="ungergrad" value="">
+                <label for="ungergrad">Undergraduate</label>
+            </li>
+            <li>
+                <input type="checkbox" id="masters" name="masters" value="">
+                <label for="masters">Masters</label>
+            </li>
+            <li>
+                <input type="checkbox" id="phd" name="phd" value="">
+                <label for="phd">PhD</label>
+            </li>
+            <li>
+                <input type="checkbox" id="postdoc" name="postdoc" value="">
+                <label for="postdoc">PostDoc</label>
+            </li>
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>
+        <ul>
+            <h3>Area of study</h3>
+            <li>
+                <input type="checkbox" id="cs" name="cs" value="">
+                <label for="cs">Computer Science</label>
+            </li>
+            <li>
+                <input type="checkbox" id="physics" name="physics" value="">
+                <label for="physics">Physics</label>
+            </li>
+            <li>
+                <input type="checkbox" id="psychology" name="psychology" value="">
+                <label for="psychology">Psychology</label>
+            </li>
+            <li>
+                <input type="checkbox" id="chem" name="chem" value="">
+                <label for="chem">Chemistry</label>
+            </li>
+            <li>
+                <input type="checkbox" id="me" name="me" value="">
+                <label for="me">Mechanical Engineering</label>
+            </li>
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>
+        <ul>
+            <h3>Type of Scholarship</h3>
+            <li>
+                <input type="checkbox" id="meritbased" name="meritbased" value="">
+                <label for="meritbased">Merit-Based </label>
+            </li>
+            <li>
+                <input type="checkbox" id="meansbased" name="meansbased" value="">
+                <label for="meansbased">Means-Based </label>
+            </li>
+            <li>
+                <input type="checkbox" id="fellowship" name="fellowship" value="">
+                <label for="fellowship">Fellowships</label>
+            </li>
+            <li>
+                <input type="checkbox" id="zerointerestloan" name="zerointerestloan" value="">
+                <label for="zerointerestloan">Zero interest loans</label>
+            </li>
+            <li>
+                <input type="checkbox" id="fullyfunded" name="fullyfunded" value="">
+                <label for="fullyfunded">Fully funded scholarships</label>
+            </li>
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>
+        <ul>
+            <h3>Location of study</h3>
+            <li>
+                <input type="checkbox" id="withinindia" name="withinindia" value="">
+                <label for="withinindia">Within India </label>
+            </li>
+            <li>
+                <input type="checkbox" id="abroad" name="abroad" value="">
+                <label for="abroad">Abroad </label>
+            </li>
+       
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>
+        <ul>
+            <h3>Scholarship funding</h3>
+            <li>
+                <input type="checkbox" id="government" name="government" value="">
+                <label for="government">Government</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="private" name="private" value="">
+                <label for="private">Private </label>
+            </li>
+       
+            <li>
+                <input type="checkbox" checked="true" id="ns" name="ns" value="">
+                <label for="ns">Not specified</label>
+            </li>
+        </ul>        
+    </div>
+    <button>View Scholarships 🔎</button>
+</div>
+    <center><input type="text" id="searchInput" onkeyup="search()" onclick="search()" class="searchbox" placeholder="Search for scholarships"></center>
+    <div class="scholarship">
+        <h2>AICTE-MITACS GLOBALINK RESEARCH INTERNSHIP (GRI) SCHEME</h2>
+        <p>
+            Scheme to foster cross-border partnerships focussed on creating a platform that opens the path for 
+            collaborative research between Canada and India to a wider pool of student talent in India.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Science and Technology
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fully funded scholarships
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Study abroad
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 1/4/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Scheme Guidelines<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>AICTE – SWANATH SCHOLARSHIP SCHEME</h2>
+        <p>
+            AICTE has approved 'AICTE – SWANATH SCHOLARSHIP SCHEME' for children from any one of the following 
+            categories:<br>
+            1. Orphan<br>
+            2. Either or both parents died due to Covid-19<br>
+            3. Wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed)<br>
+            to provide them financial support of Rs. 50,000/- per annum for every year of study.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Undergraduate
+            </div>
+            <div class="education-level" id="category">
+                Education Level:Diploma
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Engineering
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 6/4/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Scheme Guidelines<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+            <button>FAQ's<img src="https://img.icons8.com/fluency/48/000000/faq.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>AICTE - YOUTH UNDERTAKING VISIT FOR ACQUIRING KNOWLEDGE (YUVAK)</h2>
+        <p>
+            AICTE Scheme for study tour of ATAL TUNNEL, Himachal Pradesh– YOUTH UNDERTAKING VISIT FOR ACQUIRING 
+            KNOWLEDGE (YUVAK)
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Civil Engineering
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 26/4/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Scheme Document<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+            <button>Application Form<img src="https://img.icons8.com/fluency/48/000000/filled-sent.png"/></button>
+            <button>Mandate Form<img src="https://img.icons8.com/fluency/48/000000/filled-sent.png"/></button>
+            <button>List of Institutes Selected For Study Tur of ATAL Tunnel<img src="https://img.icons8.com/fluency/48/000000/user-manual.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>AICTE LILAVATI AWARD</h2>
+        <p>
+            AICTE intends to seek applications for AICTEs LILAVATI AWARD-2021-22 based on the theme “Women 
+            Empowerment” from the eligible teams of AICTE approved institutions, who have undertaken remarkable 
+            intervention for the cause and made an impact that showcases their work under eight different 
+            sub-themes.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Scholarships for Women
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Not specified
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Not specified
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 14/5/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Scheme Document<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+            <button>User Manuals<img src="https://img.icons8.com/fluency/48/000000/user-manual.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>PG SCHOLARSHIP</h2>
+        <p>
+            Scholarship is awarded to full time GATE/GPAT qualified students admitted to M.E./ M. Tech/ M. Arch 
+            and M.Pharma courses in AICTE approved Institutions/Colleges @Rs. 12,400/- PM/ student.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Engineering
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 30/6/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>AICTE DOCTORAL FELLOWSHIP (ADF)</h2>
+        <p>
+            Admitting full time meritorious research scholars by providing research fellowship who wants to 
+            seek admission to Ph.D. in AICTE approved Technical Institutes/University Departments for carrying 
+            out research in thrust areas.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: PhD
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Medicine
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 7/7/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>PRAGATI SCHOLARSHIP</h2>
+        <p>
+            Scholarship/Contingency is awarded to meritorious girls taking admission in AICTE approved Technical 
+            institution at Degree/ Diploma. Total 10000 scholarship are given @ Rs 50000 as incidentals each 
+            year.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Scholarships for Women
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Degree 
+            </div>
+            <div class="education-level" id="category">
+                Diploma
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Engineering
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 21/7/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+            <!-- <button>Batch: 2019-2020</button>
+            <button>Batch: 2018-2019</button>
+            <button>Batch: 2017-2018</button>
+            <button>Batch: 2016-2017</button>
+            <button>Batch: 2015-2016</button>
+            <button>Batch: 2014-2015</button> -->
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>SAKSHAM SCHOLARSHIP</h2>
+        <p>
+            Scholarship/Contingency is awarded to Differently abled students taking admission in AICTE approved 
+            Technical institution at Degree/ Diploma. Scholarship given @ Rs 50000 as incidentals each year.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Degree
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Engineering
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 28/7/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+            <!-- <button>Batch: 2019-2020</button>
+            <button>Batch: 2018-2019</button>
+            <button>Batch: 2017-2018</button>
+            <button>Batch: 2016-2017</button>
+            <button>Batch: 2015-2016</button>
+            <button>Batch: 2014-2015</button> -->
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>SUPPORT TO STUDENTS FOR PARTICIPATING IN COMPETITION ABROAD (SSPCA)</h2>
+        <p>
+            The objective of the scheme is to provide travel assistance registration fees to a team of minimum 2 
+            to 10 students for attending competition at international level in order to encourage engineering 
+            students to improve their field of technical education.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Not specified
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Not specified
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type:Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Study abroad
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 5/8/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Scheme Document<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+            <button>Steps to Apply<img src="https://img.icons8.com/fluency/48/000000/brief.png"/></button>
+            <button>Application Form<img src="https://img.icons8.com/fluency/48/000000/filled-sent.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>PRIME MINISTER’S SPECIAL SCHOLARSHIP SCHEME – PMSSS</h2>
+        <p>
+            Objective of the Scheme is to build up capacities in youth of J&K, educate, enable and empowering 
+            them to compete in normal course, enhancing and boosting employment potentials in students of J&K. 
+            Total 5000 scholarship are given @ Rs. 100000/- as Maintenance Charges and academic fee as 
+            Rs. 30000/- to General Degree, Rs. 125000/- to Engineering Degree & Rs. 300000/- to Medical Degree 
+            each year.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Not specified
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type:Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Study abroad
+            </div>
+            <div class="funding" id="category">
+                Funding: Private
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 15/8/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>AICTE-INAE TRAVEL GRANT SCHEME</h2>
+        <p>
+            An “AICTE-INAE Travel Grant Scheme” for Engineering Students to present papers abroad has been 
+            launched for enhancing the quality of engineering education in the country.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Research
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type:Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Study abroad
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 7/9/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Application Form<img src="https://img.icons8.com/fluency/48/000000/filled-sent.png"/></button>
+            <button>Guidelines<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+            <button>Steps to Apply<img src="https://img.icons8.com/fluency/48/000000/brief.png"/></button>
+            
+            <button>Read More<img src="https://img.icons8.com/fluency/48/000000/reading-ebook.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>SMART INDIA HACKATHON 2019</h2>
+        <p>
+            A unique initiative to identify new and disruptive digital solutions for solving the challenges 
+            faced by our country under the program of Smart India Hackathon 2017. This event was held on 
+            1st – 2nd April 2017 for 36 hrs non-stop competition. 9544 technology students, 
+            598 problems statements, 29 different central govt. ministries, 26 different Nodal centres & funding 
+            of Rs. 3 Lakh per team for 100 qualified teams.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: AICTE Institutes
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Not specified
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding: Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 27/9/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Smart India Hackathon 2019<img src="https://img.icons8.com/fluency/48/000000/document.png"/></button>
+        </div>
+    </div>
+
+    <div class="scholarship">
+        <h2>M.TECH PROJECTS AS INTERNSHIP WITH SMALL AND MEDIUM ENTERPRISES (MSMES)</h2>
+        <p>
+            The main objective of the scheme is to nurture an innovation ecosystem that benefits the 
+            technologically deficient MSMEs and technical institutes both. 408 Small and Medium Enterprises 
+            have given requirement of 738 Technology students.
+        </p>
+        <div class="tags">
+            <div class="category" id="category">
+                Category: Open To All
+            </div>
+            <div class="education-level" id="category">
+                Education Level: Masters
+            </div>
+            <div class="area-of-study" id="category">
+                Area of study: Not specified
+            </div>
+            <div class="type-of-scholarship" id="category">
+                Type: Fellowship
+            </div>
+            <div class="location-of-study" id="category">
+                Location: Within India
+            </div>
+            <div class="funding" id="category">
+                Funding:Government
+            </div>
+        </div>
+        <div class="deadline">
+            <h3>Deadline: 19/10/2022</h3>
+            <div class="deadline-circle">
+            </div>
+        </div>
+    </div>
+    <div class="no-scholarships">
+        None found
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
